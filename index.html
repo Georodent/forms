@@ -23,18 +23,18 @@
     <form method="get">
       <div class="col span_1_of_3">
       <label>Request More Info:
-        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email">
+        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email" required>
       </label>
       </div>
       
       <div class="col span_1_of_3">
       <label>First Name:
-        <input type="text" name="first-name">
+        <input type="text" name="first-name" required>
       </label>
       </div>
       <div class="col span_1_of_3">
       <label>Last Name:
-        <input type="text" name="last-name">
+        <input type="text" name="last-name" required>
       </label>
       </div>
       
@@ -51,16 +51,16 @@
       <fieldset>
         <legend>Check boxes that apply</legend>
         <label>Owner
-        <input type="checkbox" name="apply" value="owner">
+        <input type="checkbox" name="apply[]" value="owner">
         </label>
         <label>Visitor
-        <input type="checkbox" name="apply" value="visitor">
+        <input type="checkbox" name="apply[]" value="visitor">
         </label>
         <label>Developer
-        <input type="checkbox" name="apply" value="developer">
+        <input type="checkbox" name="apply[]" value="developer">
         </label>
         <label>Designer
-        <input type="checkbox" name="apply" value="designer">
+        <input type="checkbox" name="apply[]" value="designer">
         </label>
       </fieldset>
       <input class="submit" type="submit" value="Submit">
